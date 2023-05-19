@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/dolar.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+    <title>Interactive card</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="imgs">
+                <div class="frontcard">
+                    <div class="circles">
+                        <div class="c1"></div>
+                        <div class="c2"></div>
+                    </div>
+                    <div class="data">
+                        <div class="nCard">0000 0000 0000 0000</div>
+                        <div class="cardName">
+                            <span class="name">Bruno Henrique</span>
+                            <span class="validDate">00/00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="backcard">
+                    <span class="CVC">000</span>
+                </div>
+            </div>
+
+            <div class="form">
+
+                <div id="inptName" class="inpt">
+                    Cardholder Name
+                    <input type="text" placeholder="ex. Bruno Henrique" oninput="AtualizaInfos()" id="name">
+                    <span id="errorName"></span>
+                </div>
+
+                <div id="inptNCard" class="inpt">
+                    Card Number
+                    <input type="text" placeholder="ex. 0000 0000 0000 0000" maxlength="19" oninput="AtualizaInfos()"
+                        id="nCard">
+                    <span id="errorNCard"></span>
+                </div>
+
+                <div id="inptsEnd" class="flex">
+
+                    <div class="inpt">
+                        Exp. Date (MM/YY)
+                        <div class="flex">
+                            <input class="inptValid" id="mm" max="12" min="1" maxlength="2" oninput="AtualizaInfos()"
+                                type="number" placeholder="MM">
+                            <input class="inptValid" id="yy" type="number" maxlength="2" oninput="AtualizaInfos()"
+                                placeholder="YY">
+                        </div>
+                        <span id="errorNCard"></span>
+                    </div>
+                    <div class="inpt">
+                        CVC
+                        <input type="number" id="inputCVC" placeholder="ex. 123" maxlength="3"
+                            oninput="AtualizaInfos()">
+                    </div>
+                </div>
+                <button>
+                    Confirm
+                </button>
+
+                <!-- Completed state start -->
+                <div class="frm2">
+                    Thank you!
+                    We've added your card details
+                    Continue
+                </div>
+
+            </div>
+
+        </div>
+        <footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Bruno H.</a>
+        </footer>
+
+        <!-- script para fazer mascara -->
+        <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
