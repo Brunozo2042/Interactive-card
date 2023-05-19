@@ -1,0 +1,176 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 483px 100vh;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs {
+    width: 50vw;
+}
+
+.form {
+    width: 50vw;
+    max-width: 350px;
+    font-size: 18px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.frontcard {
+    background-image: url(./images/bg-card-front.png);
+    background-repeat: no-repeat;
+    height: 245px;
+    width: 447px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    right: 30px;
+    bottom: 15px;
+}
+
+.circles {
+    height: 45%;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.c1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.c2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.data {
+    height: 55%;
+    padding: 0 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nCard {
+    font-size: 30px;
+}
+
+.cardName {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+.backcard {
+    background-image: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-right: 55px;
+    height: 245px;
+    width: 447px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: white;
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+
+.inpt {
+    display: flex;
+    flex-direction: column;
+}
+
+.inptValid {
+    display: flex;
+    width: 70px;
+    margin-right: 15px;
+}
+
+#inputCVC {
+    width: 115px;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid hsl(278, 68%, 11%);
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 30px;
+    width: 350px;
+    background-color: hsl(278, 68%, 11%);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.frm2 {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
