@@ -1,3 +1,7 @@
+Projeto do Frontend Mentor, em HTML,CSS,JS com JQuery.
+Uma página q lê os dados do cartão digitados pelo usuário e, em tempo real, o usuário consegue visualizar os dados no cartão demonstrativo desenhado ao lado
+
+
 # Frontend Mentor - Interactive card details form
 
 ![Design preview for the Interactive card details form coding challenge](./design/desktop-preview.jpg)
